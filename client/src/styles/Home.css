@@ -1,0 +1,139 @@
+/* Define color variables for consistency */
+:root {
+    --bright-teal: #00ffff;
+    --vibrant-teal: #00bfa5;
+    --light-teal: #e0f7fa;
+    --medium-teal: #006666;
+    --deep-teal: #004d4d;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: black;
+    color: var(--light-teal);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-section .main-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--bright-teal);
+}
+
+.hero-section .description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--light-teal);
+    line-height: 1.8;
+}
+
+/* Categories Section (Food Section) */
+.categories-section {
+    background-color: #054e5a;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.categories-section .section-heading {
+    font-size: 2.4rem;
+    color: var(--vibrant-teal);
+}
+
+.categories-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.category-card {
+    background-color: black;
+    padding: 25px 20px;
+    border-radius: 12px;
+    color: var(--light-teal);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    width: 200px;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 191, 165, 0.5);
+    background-color: #008080;
+    /* Slightly lighter teal on hover */
+}
+
+.category-card:focus {
+    outline: 3px solid var(--vibrant-teal);
+}
+
+.category-card h3 {
+    font-size: 1.8rem;
+    color: var(--bright-teal);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu Section */
+.menu-section {
+    background-color: #111515;
+    padding: 60px 0;
+}
+
+.menu-section .section-heading {
+    font-size: 2.4rem;
+    color: var(--vibrant-teal);
+}
+
+.items-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.item-card {
+    background-color: var(--medium-teal);
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--light-teal);
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 191, 165, 0.5);
+    background-color: #008080;
+    /* Slightly lighter teal on hover */
+}
+
+.item-card:focus {
+    outline: 3px solid var(--vibrant-teal);
+}
+
+.item-card h4 {
+    font-size: 1.6rem;
+    color: var(--bright-teal);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    .categories-flex,
+    .items-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card,
+    .item-card {
+        width: 90%;
+        /* More width on mobile for better touch targets */
+        padding: 20px;
+    }
+}

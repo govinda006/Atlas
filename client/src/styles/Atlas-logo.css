@@ -1,0 +1,15 @@
+/* Logo Image Styling */
+.logo-image {
+    height: 40px;
+    /* Universal size - Adjust as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Align logo and navigation items */
+.logoBrand {
+    display: flex;
+    align-items: center;
+}

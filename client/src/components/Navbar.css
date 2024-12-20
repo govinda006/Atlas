@@ -1,0 +1,98 @@
+/* Base Styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color-scheme: light dark;
+}
+
+/* Navbar Container */
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* Dark background for sticky navbar */
+    z-index: 1000;
+    /* Ensure the navbar stays on top of other content */
+}
+
+/* Navbar Brand with Logo */
+.logoBrand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 2%;
+    /* Push logo to the extreme left */
+}
+
+.logoBrand img {
+    height: 40px;
+    /* Universal height for logo */
+    width: auto;
+    /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.logoBrand a {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logoBrand a:hover {
+    color: #FFD700;
+}
+
+/* Navbar List Styling */
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+/* Navbar Link Styling */
+nav a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FF7F50;
+}
+
+/* Active Link Styling */
+.navbar-active {
+    color: #FF6347;
+    font-weight: bold;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+        padding: 0.5rem 0;
+    }
+}

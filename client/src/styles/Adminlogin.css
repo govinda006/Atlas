@@ -1,0 +1,199 @@
+/* Fix Navbar at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    /* Set navbar background color */
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logoBrand a {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar nav ul li {
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffd700;
+    /* Gold color on hover */
+}
+
+/* Prevent content from being hidden behind the fixed navbar */
+body {
+    padding:10px 0 10px 0;
+    /* Adjust based on navbar height */
+}
+
+/* Admin Login Section */
+.section-login {
+    background-color: rgb(36, 52, 52);
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Container for Login Image and Form */
+.container {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.container.grid.grid-two-cols {
+    display: grid;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Login Image Styling */
+.login-image {
+    text-align: center;
+}
+
+.login-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Text Below Image */
+.image-text {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+}
+
+/* Login Form Styling */
+.login-form {
+    background-color: #054e5a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading Styling */
+.main-heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #e6eded;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Fields Styling */
+.form-group input {
+    padding: 12px 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #008080;
+    outline: none;
+    background-color: #e0f7f7;
+}
+
+/* Placeholder Text Styling */
+.form-group input::placeholder {
+    color: #aaa;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Submit Button Styling */
+button {
+    padding: 14px 25px;
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: translateY(-3px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .login-image img {
+        max-width: 80%;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .form-group input {
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1.4rem;
+    }
+}
